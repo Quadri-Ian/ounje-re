@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.intro-text{
+  background-color: rgb(27, 27, 27, 0.5);
+}
+
+/* Add this to make sure the footer stays at the bottom */
+/* html, body, #root {
+  height: 100%;
+} */
+
+/* The container should fill the entire screen height */
+/* #root {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* The main content should grow and push the footer to the bottom */
+/* #root > *:first-child {
+  flex-grow: 1;
+} */
