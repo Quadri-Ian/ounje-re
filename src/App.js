@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Routes, Route  }
     from 'react-router-dom';
 import Home from './pages';
 import About from './pages';
-import Locations from './pages/Location';
-import Menu from './pages/Menu';
-import Contact from './pages/Order';
-import Reservation from './pages/Reservation';
+import Locations from './pages/location';
+import Menu from './pages/menu';
+import Contact from './pages/order';
+import Reservation from './pages/reservation';
 import Footer from './components/Footer';
 import Appetizers from "./Menu";
 import LocalDishes from "./Menu/localdishes";

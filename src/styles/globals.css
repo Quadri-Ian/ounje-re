@@ -1,0 +1,110 @@
+/* styles/globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Your custom styles here */
+
+/* @font-face {
+    font-family: 'Philosopher';
+    src: url('../public/fonts/Philosopher/Philosopher-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Philosopher';
+    src: url('../public/fonts/Philosopher/Philosopher-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Tangarine';
+    src: url('../public/fonts/Tangerine/Tangerine-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Tangarine';
+    src: url('../public/fonts/Tangerine/Tangerine-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Playball';
+    src: url('../public/fonts/Playball/Playball-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  } */
+  
+  .intro-text{
+    background-color: rgb(27, 27, 27, 0.5);
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playball';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+
+
+
+/* Scrollbar styling for WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #155e75; 
+  border-radius: 5px; 
+}
+
+/* Scrollbar styling for Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #155e75;
+}
+
+/* Customize the thumb (the draggable part) */
+body::-webkit-scrollbar-thumb {
+  background-color: #00838F;
+  border-radius: 5px;
+}
+body{
+  background-color: #ecfeff;
+}
+
+
+/* Default styles for NavLink */
+.NavLink {
+  color: #67e8f9;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover state */
+.NavLink:hover {
+  color: #ecfeff;
+  text-decoration: underline;
+}
+
+/* Active state */
+.NavLink.active {
+  color: #ecfeff;
+  text-decoration: none;
+}
+
+.Menu {
+  background-color: #155e75;
+  list-style: none;
+  color:  #67e8f9;
+  padding: 1rem;
+  font-weight: bold;
+}
+

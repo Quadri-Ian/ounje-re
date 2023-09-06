@@ -2,51 +2,92 @@ import React from 'react';
  
 const Footer = () => {
     return (
-        <div className='flex flex-col md:flex-row justify-between items-center bg-cyan-800 min-h-[70%] px-2 py-8'>
+        <div className='bg-cyan-800 mt-20 h-[70%]'>
+        <div className='flex flex-col lg:flex-row justify-between items-center bg-cyan-800 space-y-6  px-12 py-20 lg:py-36'>
         <div className="flex justify-center text-center items-center">
-                    <h1 className="text-2xl text-cyan-300 lg:p-2 p-1 border-4 border-r-8 border-cyan-300 border-r-cyan-100 lg:border-[10px] border-r-4 rounded-l-lg lg:text-4xl font-bold">
+                    <h1 className="text-2xl text-cyan-300 md:p-2 p-1 border-4 border-r-8 border-cyan-300 border-r-cyan-100 md:border-[10px]  rounded-l-lg md:text-4xl font-bold">
                     OÚNJẸ R<span className="text-cyan-100">E</span>
                     </h1>
                 </div>
-            <div className='grid grid-rows-3 md:grid-cols-2 items-center justify-center gap-y-6 text-lg text-cyan-200'>
-            <div className='text-md'>
-                <h2 className='text-2xl text-cyan-100'>
-                    Sycamore
+
+                <div className=" text-cyan-100 text-center  lg:text-lg">
+                    <h2 className="text-2xl font-semibold my-2">Contact Us</h2>
+                    <p className="mb-2">Address: 123 Main Street, Your City</p>
+                    <p className="mb-2">Phone: (123) 456-7890</p>
+                    <p>Email: info@ounjere.com</p>
+                    <div className="mt-4">
+                        <a
+                        href="mailto:info@ounjere.com"
+                        className="text-cyan-300 hover:underline"
+                        >
+                        Email Us
+                        </a>
+                    </div>
+                    </div>
+
+
+            <div id='footer' className='flex flex-col md:flex-row items-center justify-center text-center md:text gap-x-4  lg:text-lg text-cyan-100'>
+            <div className='space-y-6'>
+            <div className=''>
+                <h2 className='text-2xl font-semibold italic text-cyan-100'>
+                    Banana Island
                 </h2>
                 <p>
-                    7007 W Romaine St. Ste 103
+                    6001 Bjorne St. Ste 103
                 </p>
                 <p>
-                    Los Angeles, CA 90038
+                    Lagos,  100001
                 </p>
             </div>
 
             <div>
-                <h2 className='text-2xl text-cyan-100'>
-                    West Adams
+                <h2 className='text-2xl font-semibold italic text-cyan-100'>
+                    Victoria Island
                 </h2>
                 <p className='text-md'>
-                5400 West Adams Blvd                
+                2300  Adams Blvd                
                 </p>
                 <p className='text-md'>
-                Los Angeles, CA 90016
-                </p>
-            </div>
-
-            <div>
-                <h2 className='text-2xl text-cyan-100'>
-                Sherman Oaks
-                </h2>
-                <p>
-                4515 Sepulveda Blvd
-                </p>
-                <p>
-                Sherman Oaks, CA 91403
+                Lagos,  10001
                 </p>
             </div>                
             </div>
 
+            <div className='space-y-6'>
+            <div>
+                <h2 className='text-2xl font-semibold italic text-cyan-100'>
+                Lekki
+                </h2>
+                <p>
+                2006 Admiralty 
+                </p>
+                <p>
+                Lagos island, 100001
+                </p>
+            </div>    
+
+            <div>
+                <h2 className='text-2xl font-semibold italic text-cyan-100'>
+                Lekki Pennisula
+                </h2>
+                <p>
+                0001 Idontire 
+                </p>
+                <p>
+                Lagos island, 100001
+                </p>
+            </div>   
+            </div>
+
+              
+            </div>
+
+        </div>  
+            <h1 className='text-center text-cyan-50'>
+                © 2023 | IAN
+            </h1>                  
         </div>
+
     );
 };
  
