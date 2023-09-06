@@ -1,8 +1,15 @@
 {
   "/_app": "pages/_app.js",
+  "/": "pages/index.html",
   "/_error": "pages/_error.js",
+  "/login": "pages/login.html",
+  "/menu": "pages/menu.html",
+  "/order": "pages/order.html",
+  "/reservation": "pages/reservation.html",
+  "/subpage/appetizers": "pages/subpage/appetizers.html",
+  "/subpage/beverages": "pages/subpage/beverages.html",
+  "/subpage/localdishes": "pages/subpage/localdishes.html",
+  "/subpage/shakes": "pages/subpage/shakes.html",
   "/_document": "pages/_document.js",
-  "/order": "pages/order.js",
-  "/": "pages/index.js",
-  "/reservation": "pages/reservation.js"
+  "/404": "pages/404.html"
 }
