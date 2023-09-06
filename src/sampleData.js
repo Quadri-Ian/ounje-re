@@ -5,7 +5,7 @@ import buffalo from './resourses/honeybuffalo.jpg';
 import shrimp from './images/shrimp.jpeg';
 import crabcake from './images/crabcake.jpg';
 import sirlorin from './resourses/sirlorin.jpg';
-import burger from './resourses/eagle burger.jpg';
+import burger from './resourses/eagleburger.jpg';
 import haddock from './resourses/haddock.webp';
 import aloha from './resourses/aloha.jpg';
 import blossom from './resourses/blossom.jpg'

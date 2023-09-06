@@ -100,6 +100,24 @@ body{
   text-decoration: none;
 }
 
+.menulink {
+  color: #00838F;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover state */
+.menulink:hover {
+  color: #67e8f9;
+  text-decoration: underline;
+}
+
+/* Active state */
+.menulink.active {
+  color: #67e8f9;
+  text-decoration: none;
+}
+
 .Menu {
   background-color: #155e75;
   list-style: none;

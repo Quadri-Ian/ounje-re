@@ -21,7 +21,7 @@ const About = () => {
                 // placeholder="blur" // Optional blur-up while loading
                 />
             <div className="flex flex-col text-lg md:text-2xl absolute inset-0 m-auto justify-center items-center">
-                <h1 className="intro-text text-left w-[90%] lg:w-1/2 text-cyan-50 italic">
+                <h1 className="intro-text text-left w-[90%] lm:w-[70%] lg:w-1/2 text-cyan-50 italic">
                 Nestled in the vibrant heart of Lagos Island, the revamped OÚNJẸ RE offers a
                  unique and revitalized Eko grill experience. Our offerings include a delightful 
                  build-your-own pickle bar, 
@@ -37,9 +37,9 @@ const About = () => {
 
             <h2 className="text-cyan-800 text-3xl md:text-6xl mt-36 my-20 text-center underline italic">Country food est 1951</h2>
 
-            <div className="aboutt text-center md:border-[40px] border-cyan-800  mx-auto md:flex justify-center flex-row-reverse  items-center lg:h-1/2 lg:bg-cyan-800">
+            <div className="aboutt text-center md:border-[40px] border-cyan-800  mx-auto md:flex justify-center flex-row-reverse  items-center lm:h-1/2 lm:bg-cyan-800">
                 <div className="lg:w-1/3 ">
-                <p className="aboutt lg:text-2xl text-cyan-800 lg:text-cyan-200">
+                <p className="aboutt lm:text-lg lg:text-1xl text-cyan-800 lm:text-cyan-200">
                 At OÚNJẸ RE, we pride ourselves on crafting menus that draw inspiration 
                 from the changing seasons, allowing us to showcase the finest seafood and 
                 meats sourced locally from the Gulf coast and beyond. Our raw bar is a true 
@@ -99,7 +99,7 @@ const About = () => {
                     <Image
                     src={Chefhold}
                     alt="Picture of the author"
-                    className="border-8 w-full border-cyan-800 border-r-[30px] border-dashed border-r-cyan-300 relative"
+                    className="border-8 w-full border-cyan-800 border-r-[30px] border-dashed border-r-cyan-800 relative"
                     // width={500} automatically provided
                     // height={500} automatically provided
                     // blurDataURL="data:..." automatically provided

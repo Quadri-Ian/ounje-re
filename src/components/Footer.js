@@ -3,14 +3,14 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='bg-cyan-800 mt-20 h-[70%]'>
-        <div className='flex flex-col lg:flex-row justify-between items-center bg-cyan-800 space-y-6  px-12 py-20 lg:py-36'>
+        <div className='flex flex-col lm:flex-row justify-between items-center bg-cyan-800 space-y-6  px-12 py-20 lm:py-36'>
         <div className="flex justify-center text-center items-center">
-                    <h1 className="text-2xl text-cyan-300 md:p-2 p-1 border-4 border-r-8 border-cyan-300 border-r-cyan-100 md:border-[10px]  rounded-l-lg md:text-4xl font-bold">
+                    <h1 className="text-2xl text-cyan-300 md:p-2 p-1 border-4 border-r-8 border-cyan-300 border-r-cyan-100 md:border-[10px]  rounded-l-lm md:text-4xl font-bold">
                     OÚNJẸ R<span className="text-cyan-100">E</span>
                     </h1>
                 </div>
 
-                <div className=" text-cyan-100 text-center  lg:text-lg">
+                <div className=" text-cyan-100 text-center  lm:text-lm">
                     <h2 className="text-2xl font-semibold my-2">Contact Us</h2>
                     <p className="mb-2">Address: 123 Main Street, Your City</p>
                     <p className="mb-2">Phone: (123) 456-7890</p>
@@ -26,7 +26,7 @@ const Footer = () => {
                     </div>
 
 
-            <div id='footer' className='flex flex-col md:flex-row items-center justify-center text-center md:text gap-x-4  lg:text-lg text-cyan-100'>
+            <div id='footer' className='flex flex-col md:flex-row items-center justify-center text-center md:text gap-x-4  lm:text-lm text-cyan-100'>
             <div className='space-y-6'>
             <div className=''>
                 <h2 className='text-2xl font-semibold italic text-cyan-100'>

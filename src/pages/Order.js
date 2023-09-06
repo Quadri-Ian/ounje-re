@@ -24,7 +24,7 @@ function OrderPage() {
   return (
     <div className='bg-cyan-50 mt-20 md:mt-28 pb-16'>
       <h1 className='text-center p-4 text-3xl md:text-5xl italic font-semibold text-cyan-800 underline underline-offset-0'>PLACE ORDER</h1>
-      <ul className='grid grid-cols-2 lg:grid-cols-4 m-2 gap-8'>
+      <ul className='grid grid-cols-2 lm:grid-cols-3 m-2 lm:m-6 gap-3 md:gap-8 over'>
         {sampleData.map((item) => (
           <li key={item.dish_id}>
        <div className=' w-86 shadow-sm hover:shadow-lg hover:shadow-black hover:-translate-y-1 transition duration-500 ease-in-out shadow-black rounded-md'>
@@ -47,8 +47,8 @@ function OrderPage() {
           <h3 className='text-sm pr-4 font-semibold text-center'>{item.dish_name}</h3>         
         </div>
 
-        <button className='text-white text-center bg-cyan-800 rounded-3xl mb-2 flex justify-center items-center'>
-        <div className='text-white border-r-2 text-lg px-3 text-center'><FontAwesomeIcon icon={faShoppingBasket}/> </div>  <div className=''> <p className='text-center px-4'>${item.price}</p></div> 
+        <button className='text-white text-center hover:text-cyan-800 hover:bg-cyan-100 transition duration-200 ease-linear bg-cyan-800 rounded-3xl mb-2 flex justify-center items-center'>
+        <div className=' border-r-2 text-lg px-3 text-center'><FontAwesomeIcon icon={faShoppingBasket}/> </div>  <div className=''> <p className='text-center px-4'>${item.price}</p></div> 
         </button>
       </div>       
       </div>
