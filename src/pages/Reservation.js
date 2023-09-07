@@ -119,14 +119,27 @@ function ReservationPage() {
             required
           />
         </div>
-        <div className='flex justify-between w-[85%] md:justify-normal space-x-3 md:space-x-9 lm:space-x-12 lg:space-x-10  mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
+        {/* <div className='flex justify-between w-[85%] md:justify-normal space-x-3 md:space-x-9 lm:space-x-12 lg:space-x-10  mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
           <label className='text-cyan-300'>Date:</label>
           <DatePicker
             selected={reservationData.date}
             onChange={handleDateChange}
-            className="p-1 bg-cyan-50 w-full md:w-[127.5%] lm:w-[147.5%] lg:w-[158%] rounded-r-full"
+            className="p-1 bg-cyan-50  md:w-[127.5%] lm:w-[147.5%] lg:w-[158%] rounded-r-full"
             required
           />
+        </div> */}
+
+        <div className='flex justify-between w-[85%] md:justify-normal space-x-3 md:space-x-9 lm:space-x-12 lg:space-x-10  mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
+          <label className='text-cyan-300'>Date:</label>
+          <div className='p-1 bg-cyan-50 w-[78%] rounded-r-full'>
+          <DatePicker
+            selected={reservationData.date}
+            onChange={handleDateChange}
+            className='w-[100%] rounded-full bg-cyan-50'
+            required
+          />            
+          </div>
+
         </div>
         {/* Add other input fields */}
         <div className='text-center mt-4'>
