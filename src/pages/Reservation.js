@@ -86,7 +86,7 @@ function ReservationPage() {
       onSubmit={handleSubmit}
       className='p-5 space-y-2 flex flex-col justify-center'
       >
-        <div className='flex justify-between w-[85%]  mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
+        <div className='flex justify-between text-cyan-800  w-[85%]  mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
           <label className='text-cyan-300'>Name:</label>
           <input
             type="text"
@@ -97,7 +97,7 @@ function ReservationPage() {
             required
           />
         </div>
-        <div className='flex justify-between w-[85%] mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
+        <div className='flex justify-between w-[85%]  mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
           <label className='text-cyan-300'>Email:</label>
           <input
             type="email"
@@ -108,7 +108,7 @@ function ReservationPage() {
             required
           />
         </div>
-        <div className='flex justify-between w-[85%] mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
+        <div className='flex justify-between text-cyan-800  w-[85%] mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
           <label className='text-cyan-300'>Phone:</label>
           <input
             type="tel"
@@ -129,18 +129,21 @@ function ReservationPage() {
           />
         </div> */}
 
-        <div className='flex justify-between w-[85%] md:justify-normal space-x-3 md:space-x-9 lm:space-x-12 lg:space-x-10  mx-auto md:w-[40%] lg:w-[25%] items-center border rounded-full pl-3 bg-cyan-700'>
-          <label className='text-cyan-300'>Date:</label>
-          <div className='p-1 bg-cyan-50 w-[78%] rounded-r-full'>
-          <DatePicker
-            selected={reservationData.date}
-            onChange={handleDateChange}
-            className='w-[100%] rounded-full bg-cyan-50'
-            required
-          />            
+      <div className='flex flex-col w-[85%] md:w-[40%] lg:w-[25%] mx-auto mt-4 space-y-2'>
+          <div className='flex justify-center'>
+            <label className='text-cyan-300 text-center bg-cyan-800 p-1 rounded-md'>Date:</label>
           </div>
-
+          <div className='p-1 bg-cyan-50 border-2 text-cyan-800 rounded-full w-full text-center items-center flex justify-center'>
+              <DatePicker
+                selected={reservationData.date}
+                onChange={handleDateChange}
+                className='w-full rounded-full bg-cyan-50 flex text-center'
+                required
+              />            
+            </div>          
         </div>
+
+
         {/* Add other input fields */}
         <div className='text-center mt-4'>
           <button className='rounded-full text-lg shadow-sm md:shadow-md shadow-cyan-800 p-1 px-2 md:p-3 text-cyan-300 bg-cyan-800 hover:text-cyan-800 hover:bg-cyan-50 transition duration-200 ease-linear' type="submit">Submit Reservation</button>
