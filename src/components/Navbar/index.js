@@ -96,7 +96,7 @@ const Navbar = () => {
                       {/* Logo */}
                 <div className="flex lm:flex-1 justify-center text-center items-center">
                     <Link href="/">
-                    <h1 className="text-lg md:text-3xl text-cyan-300 lg:p-2 p-1 border-2 border-r-8 border-cyan-300 border-r-cyan-100 lm:border-[6px] lm:border-r-[12px] rounded-l-lg lg:text-4xl font-bold">
+                    <h1 className="text-lg md:text-2xl text-cyan-300 lg:p-2 p-1 border-2 border-r-8 border-cyan-300 border-r-cyan-100 lm:border-[6px] lm:border-r-[12px] rounded-l-lg lg:text-4xl font-bold">
                     OÚNJẸ R<span className="text-cyan-100">E</span>
                     </h1>                        
                     </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Order Now */}
-                <div className="hidden flex-1 lm:flex lm:text-3xl text-cyan-300 items-center justify-end gap-x-4">
+                <div className="hidden flex-1 lm:flex text-lg lg:text-2xl text-cyan-300 items-center justify-end gap-x-6">
                   <div className="relative">
                     <FontAwesomeIcon icon={faShoppingBasket}/>
                     <p className="rounded-full bg-red-600 text-white text-sm items-center text-center absolute z-10 -right-2 top-0 px-1">6</p>
