@@ -14,7 +14,7 @@ const About = () => {
             <Image
                 src={Coolbg}
                 alt="Picture of the author"
-                className="w-full object-cover h-screen"
+                className="cardo w-full object-cover h-screen"
                 // width={500} automatically provided
                 // height={500} automatically provided
                 // blurDataURL="data:..." automatically provided
@@ -70,7 +70,7 @@ const About = () => {
 
             </div>
 
-            <div className="md:flex space-y-6 justify-center mx-auto items-center mt-12 w-full">
+            <div className="md:flex space-y-6 justify-center mx-auto items-center mt-44 w-full">
                     <div className="grid gap-y- text-center items-center flex-1
                     list-none w-full justify-center text-[#272727] text-2xl"
                     >

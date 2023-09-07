@@ -126,3 +126,6 @@ body{
   font-weight: bold;
 }
 
+.cardo {
+  filter: grayscale(70%);
+}
