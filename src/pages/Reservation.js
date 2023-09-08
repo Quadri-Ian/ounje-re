@@ -67,7 +67,7 @@ function ReservationPage() {
   };
 
   return (
-    <div className='bg-cyan-50 mt-20 md:mt-28'>
+    <div className=' py-20 md:pt-28 reservationpage'>
       <h1 className='text-center text-2xl p-4 text-cyan-800 font-semibold'>Make a Reservation</h1>
       <div className=''>
         <Carousel/>

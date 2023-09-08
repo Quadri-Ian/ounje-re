@@ -22,7 +22,7 @@ function OrderPage() {
   // }, []);
 
   return (
-    <div className='bg-cyan-50 mt-20 md:mt-28 pb-16'>
+    <div className=' py-20 md:pt-28 '>
       <h1 className='text-center p-4 text-3xl md:text-5xl italic font-semibold text-cyan-800 underline underline-offset-0'>PLACE ORDER</h1>
       <ul className='grid grid-cols-2 lm:grid-cols-3 m-2 lm:m-6 gap-3 md:gap-8 over'>
         {sampleData.map((item) => (
