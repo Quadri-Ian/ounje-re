@@ -103,7 +103,7 @@ const About = () => {
             </div>
 
 
-                <div className="mt-36 mb-2">
+                <div className="my-20 mx-6 rounded-lg  h-96 overflow-y-auto">
                     <ImageGallery images={images} />
                 </div>
 

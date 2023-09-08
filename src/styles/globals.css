@@ -202,3 +202,7 @@ body{
   background-attachment: fixed;
   filter: grayscale(70%);
 }
+
+.gallery {
+  filter: grayscale(50%);
+}

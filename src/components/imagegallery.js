@@ -44,8 +44,9 @@ const ImageGallery = ({ images }) => {
       }`}
       onClick={() => openImage(index)}
     >
+      
       <Image
-        className="shadow-lg shadow-black rounded-md w-full h-full object-cover"
+        className="gallery shadow-2xl shadow-black rounded-md w-full h-full object-cover"
         src={image.src}
         alt={image.alt}
         width={500}
@@ -56,10 +57,11 @@ const ImageGallery = ({ images }) => {
         </div>
       ))}
       {selectedImage !== null && (
-        <div className="fixed top-28 left-8 w-[80%] h-[50%] md:left-[15%] md:top-[17%] md:w-[70%] md:h-[70%] lm:h-[80%]  bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed  right-0 top-0 m-auto w-full h-full  bg-black bg-opacity-75
+        flex items-center justify-center z-50">
           {/* Display selected image here */}
           <Image
-          className='w-full h-full object-cover rounded-sm shadow-sm shadow-black'
+          className='w-[70%] h-[70%] object-fit rounded-sm border-8 border-cyan-50 shadow-md shadow-black'
            src={images[selectedImage].src}
             width={5000} height={5000}
              alt={images[selectedImage].alt}
