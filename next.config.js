@@ -8,8 +8,21 @@
 module.exports = {
 
   images: {
+    loader: "imgix",
+    path: "/",
+  },
+
+
+  images: {
     domains: ["images.pexels.com"],
   },
+
+  experimental: {
+    modern: true,
+    polyfillsOptimization: true,
+  },
+
+
   // async rewrites() {
   //   return [
   //     { source: '/menu/(appetizers|localdishes|shakes|beverages)', destination: '/menu' },
