@@ -26,7 +26,7 @@ const Footer = () => {
                     </div>
 
 
-            <div id='footer' className='flex flex-col md:flex-row items-center justify-center text-center md:text gap-4  lm:text-lm text-cyan-100'>
+            <div id='footer' className='flex flex-col md:flex-row items-center justify-center text-center md:text gap-4 lg:space-x-8  lm:text-lm text-cyan-100'>
             <div className='space-y-6'>
             <div className=''>
                 <h2 className='text-2xl font-semibold italic text-cyan-100'>

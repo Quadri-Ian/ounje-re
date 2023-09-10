@@ -51,6 +51,8 @@ const ImageGallery = ({ images }) => {
         alt={image.alt}
         width={500}
         height={500}
+        loading="lazy" // Enable lazy loading
+
       />
 
 
@@ -61,10 +63,12 @@ const ImageGallery = ({ images }) => {
         flex items-center justify-center z-50">
           {/* Display selected image here */}
           <Image
-          className='w-[70%] h-[70%] object-fit rounded-sm border-8 border-cyan-50 shadow-md shadow-black'
+          className='w-[70%] h-[50%] object-fit rounded-sm border-8 border-cyan-50 shadow-md shadow-black'
            src={images[selectedImage].src}
             width={5000} height={5000}
              alt={images[selectedImage].alt}
+             loading="lazy" // Enable lazy loading
+
               />
           <button
             className="absolute top-0 right-0 m-4 text-white text-2xl"

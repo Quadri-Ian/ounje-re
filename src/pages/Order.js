@@ -33,6 +33,7 @@ function OrderPage() {
         <Image
                 src={item.image_data} alt={item.dish_name}
                 className="object-cover w-full h-64 rounded-t-md "
+                loading="lazy" // Enable lazy loading
                 // width={500} automatically provided
                 // height={500} automatically provided
                 // blurDataURL="data:..." automatically provided

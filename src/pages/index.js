@@ -92,6 +92,8 @@ const About = () => {
                         src={Coolpic}
                         alt="Picture of the author"
                         className="object-cover md:border-8 border-cyan-200"
+                        loading="lazy" // Enable lazy loading
+
                         // width={500} automatically provided
                         // height={500} automatically provided
                         // blurDataURL="data:..." automatically provided
@@ -103,7 +105,7 @@ const About = () => {
             </div>
 
 
-                <div className="my-20 mx-6 rounded-lg  h-96 overflow-y-auto">
+                <div className="my-20 mx-6 rounded-lg  h-96 lm:h-[30rem] overflow-y-auto">
                     <ImageGallery images={images} />
                 </div>
 

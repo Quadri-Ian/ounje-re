@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import Image from 'next/image';
 import moment from 'moment';
@@ -7,8 +7,18 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'; // Import the styles for date picker
 import reserve from '../images/pexels-alex-urezkov-16251530.jpg'
 import Carousel from '../components/carousel'
+import FormSkeleton from '../components/inputSkelenton';
 
 function ReservationPage() {
+  const [isLoading, setIsLoading] = useState(true); // Add loading state
+
+  // Simulate a delay for loading data
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false); // Set loading state to false
+    }, 2000); // Simulated 2 seconds delay
+  }, []);
+
   const localizer = momentLocalizer(moment);
 
   const [reservationData, setReservationData] = useState({
@@ -82,6 +92,11 @@ function ReservationPage() {
           selectable
         />
       </div> */}
+
+        {/* Conditionally render the form or skeleton */}
+        {isLoading ? (
+        <FormSkeleton />
+      ) : (
       <form 
       onSubmit={handleSubmit}
       className='p-5 space-y-2 flex flex-col justify-center'
@@ -149,8 +164,11 @@ function ReservationPage() {
           <button className='rounded-full text-lg shadow-sm md:shadow-md shadow-cyan-800 p-1 px-2 md:p-3 text-cyan-300 bg-cyan-800 hover:text-cyan-800 hover:bg-cyan-50 transition duration-200 ease-linear' type="submit">Submit Reservation</button>
         </div>
       </form>
+      )}
+
     </div>
   );
 }
+
 
 export default ReservationPage;

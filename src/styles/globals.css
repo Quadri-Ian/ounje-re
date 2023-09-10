@@ -206,3 +206,16 @@ body{
 .gallery {
   filter: grayscale(50%);
 }
+
+/* styles/InputSkeleton.module.css */
+
+/* styles/FormSkeleton.module.css */
+
+.skeleton-input {
+  height: 20px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+

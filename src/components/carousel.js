@@ -28,6 +28,8 @@ export default class NextJsCarousel extends Component {
               src={suya}
               className='rounded-b-3xl object-cover w-full h-full'
               alt="image1"
+              loading="lazy" // Enable lazy loading
+
             />
           </div>
           <div className='h-[300px]'>
@@ -35,6 +37,8 @@ export default class NextJsCarousel extends Component {
               src={bplate}
               className='rounded-b-3xl object-cover w-full h-full'
               alt="image2"
+              loading="lazy" // Enable lazy loading
+
             />
           </div>
           <div className='h-[300px]'>
@@ -42,6 +46,8 @@ export default class NextJsCarousel extends Component {
               src={plate1}
               className='rounded-b-3xl object-cover w-full h-full'
               alt="image3"
+              loading="lazy" // Enable lazy loading
+
             />
           </div>
           <div className='h-[300px]'>
@@ -49,6 +55,8 @@ export default class NextJsCarousel extends Component {
               src={cyandish}
               className='rounded-b-3xl object-cover w-full h-full'
               alt="image4"
+              loading="lazy" // Enable lazy loading
+
             />
           </div>
           <div className='h-[300px]'>
@@ -56,6 +64,8 @@ export default class NextJsCarousel extends Component {
               src={oldish}
               className='rounded-b-3xl object-cover w-full h-full'
               alt="image5"
+              loading="lazy" // Enable lazy loading
+
             />
           </div>
         </Carousel>
