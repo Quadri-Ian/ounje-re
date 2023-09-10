@@ -17,11 +17,6 @@ module.exports = {
     domains: ["images.pexels.com"],
   },
 
-  experimental: {
-    modern: true,
-    polyfillsOptimization: true,
-  },
-
 
   // async rewrites() {
   //   return [
