@@ -18,6 +18,8 @@ module.exports = {
   },
 
 
+
+
   // async rewrites() {
   //   return [
   //     { source: '/menu/(appetizers|localdishes|shakes|beverages)', destination: '/menu' },

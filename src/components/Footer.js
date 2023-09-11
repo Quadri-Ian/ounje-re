@@ -1,12 +1,13 @@
 import React from 'react';
- 
+import Link from 'next/link'; 
+
 const Footer = () => {
     return (
         <div className='bg-cyan-800  h-[70%] z-50  '>
         <div className='flex z-50 flex-col lm:flex-row justify-between items-center bg-cyan-800 space-y-6  px-12 py-20 lm:py-36'>
         <div className="flex justify-center text-center items-center">
                     <h1 className="text-2xl text-cyan-300 md:p-2 p-1 border-4 border-r-8 border-cyan-300 border-r-cyan-100 md:border-[10px]  rounded-l-lm md:text-4xl font-bold">
-                    OÚNJẸ R<span className="text-cyan-100">E</span>
+                   <Link href="/"> OÚNJẸ R<span className="text-cyan-100">E</span> </Link> 
                     </h1>
                 </div>
 

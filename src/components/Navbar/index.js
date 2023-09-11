@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBasket, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; // Add the faTimes icon
+import { faShoppingBasket, faBurger, faTimes, faUtensils } from "@fortawesome/free-solid-svg-icons"; // Add the faTimes icon
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,9 +40,13 @@ function Navbar() {
           </li>
         </ul>
 
-      <div className="lm:hidden flex space-x-4">
-          <div className="relative text-cyan-300">
-            <div className="text-2xl">
+      <div className="lm:hidden flex space-x- items-center">
+      <div className="text-1xl text-cyan-300 flex flex-col items-center pr-1 border-r-2 border-cyan-300">
+         <Link href="/order"><FontAwesomeIcon icon={faUtensils} /> </Link> 
+          </div>
+
+          <div className="relative text-cyan-300 pl-1">
+            <div className="text-1xl">
               <FontAwesomeIcon icon={faShoppingBasket} />
             </div>
             <p className="rounded-full bg-red-600 text-white text-[8px] items-center text-center absolute z-10 -right-1 top-0 px-1">
@@ -52,7 +56,7 @@ function Navbar() {
         </div>
 
         {/* Logo */}
-        <div className="flex lm:flex-1 z-10 justify-center text-center items-center">
+        <div className="flex flex-1 z-10 justify-center text-center items-center">
           <Link href="/">
             <h1 className="text-lg md:text-2xl text-cyan-300 lg:p-2 p-1 border-2 border-r-8 border-cyan-300 border-r-cyan-100 lm:border-[6px] lm:border-r-[12px] rounded-l-lg lg:text-4xl font-bold">
               OÚNJẸ R<span className="text-cyan-100">E</span>
@@ -62,13 +66,13 @@ function Navbar() {
 
         {/* Hamburger button for smaller screens */}
         <button
-          className="lm:hidden text-cyan-300 z-10 hover:text-cyan-100 focus:outline-none"
+          className="lm:hidden  text-cyan-300 z-10 hover:text-cyan-100 focus:outline-none"
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
             <FontAwesomeIcon icon={faTimes} className="text-2xl" />
           ) : (
-            <FontAwesomeIcon icon={faBars} className="text-2xl" />
+            <FontAwesomeIcon icon={faBurger} className="text-2xl" />
           )}
         </button>
 
@@ -83,6 +87,7 @@ function Navbar() {
             </button>
             <Link href="#about">About</Link>
             <Link href="/menu">Menu</Link>
+            <Link href="/order">Order</Link>
             <Link href="/reservation">Reservation</Link>
             <Link href="#footer">Contact Us</Link>
           </div>
